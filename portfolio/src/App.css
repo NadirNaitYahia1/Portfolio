@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    background: #081b29;
+    color: #ededed; 
+    --secondary-bg-color: linear-gradient(45deg, #3b6978, #204051); /* Variable for second background */
+    /* font-family: 'Inter', sans-serif;    */
+}
+.section-with-second-bg {
+    background:#112e42 !important; 
+    color: var(--main-text-color) !important;  
+    padding: 20px;
+}
+nav{
+    background: #081b29 !important;
+}
+.cube {
+ 
+    width: 10px;
+    height: 10px;
+    transform-style: preserve-3d;
+    transform-origin: center;
+ 
+  }
+  
+  .face {
+    
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+  }
+  
+  .front  { transform: translateZ(100px); }
+  .back   { transform: rotateY(180deg) translateZ(100px); }
+  .left   { transform: rotateY(-90deg) translateZ(100px); }
+  .right  { transform: rotateY(90deg) translateZ(100px); }
+  .top    { transform: rotateX(90deg) translateZ(100px); }
+  .bottom { transform: rotateX(-90deg) translateZ(100px); }
+  
